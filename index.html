@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Yadav — DevOps Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Abhishek Yadav, a B.Tech Computer Science student specializing in DevOps engineering. Explore projects, skills, certifications, and more.">
+  <meta name="keywords"
+    content="Abhishek Yadav, DevOps Engineer, Cloud Computing, AWS, Docker, GitHub Actions, Portfolio">
+  <meta name="author" content="Abhishek Yadav">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════ PAGE LOADER ═══════════════════ -->
+  <div class="page-loader">
+    <div class="loader-text">
+      <span style="animation-delay:0.1s">A</span><span style="animation-delay:0.15s">b</span><span
+        style="animation-delay:0.2s">h</span><span style="animation-delay:0.25s">i</span><span
+        style="animation-delay:0.2s">s</span><span style="animation-delay:0.25s">h</span><span
+        style="animation-delay:0.2s">e</span><span style="animation-delay:0.25s">k</span><span
+        style="animation-delay:0.3s"> </span><span style="animation-delay:0.4s">&nbsp;</span><span
+        style="animation-delay:0.45s">Y</span><span style="animation-delay:0.5s">a</span><span
+        style="animation-delay:0.55s">d</span><span style="animation-delay:0.6s">a</span><span
+        style="animation-delay:0.65s">v</span>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+    <div class="loader-counter">0%</div>
+  </div>
+
+  <!-- ═══════════════════ CUSTOM CURSOR ═══════════════════ -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">A</span>
+        <span class="logo-dot">.</span>
+      </a>
+      <div class="nav-center" id="navLinks">
+        <a href="#about" class="nav-link"><span class="nav-link-num">01</span>About</a>
+        <a href="#skills" class="nav-link"><span class="nav-link-num">02</span>Skills</a>
+        <a href="#projects" class="nav-link"><span class="nav-link-num">03</span>Projects</a>
+        <a href="#certifications" class="nav-link"><span class="nav-link-num">04</span>Certs</a>
+        <a href="#tools" class="nav-link"><span class="nav-link-num">05</span>Tools</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon theme-icon-sun">☀</span>
+          <span class="theme-icon theme-icon-moon">☽</span>
+        </button>
+        <a href="#contact" class="nav-cta"><span>Let's Talk</span></a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ SECTION 1: HERO ═══════════════════ -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <!-- <p class="hero-label">PORTFOLIO · 2025</p> -->
+        <h1 class="hero-name" id="heroName">Abhishek Yadav</h1>
+        <div class="hero-role">
+          <span class="role-line"></span>
+          <span>DevOps Engineer | Cloud & Full Stack Enthusiast</span>
+        </div>
+        <p class="hero-tagline">Designing scalable systems and automating infrastructure with DevOps mindset.</p>
+        <p class="hero-description">Passionate about DevOps, cloud computing, and building scalable systems.
+          Currently working with AWS, Docker, and CI/CD pipelines while developing real-world projects.</p>
+        <div class="cta-row">
+          <a href="#projects" class="btn btn-primary"><span>View Projects</span></a>
+          <a href="https://drive.google.com/file/d/1HT_p_89XdTqzrxUiIBG3CIDz6g1EUvz0/view?usp=drive_link" target="_blank"
+            rel="noopener" class="btn btn-ghost"><span>Download Resume</span></a>
+        </div>
+      </div>
+      <div class="hero-right reveal-right" style="display: flex; align-items: flex-end; justify-content: center;">
+        <div class="hero-decoration"
+          style="width: 100%; height: 100%; position: relative; display: flex; align-items: flex-end; justify-content: center;">
+          <div class="deco-circle-lg"></div>
+          <div class="deco-circle-md"></div>
+          <div class="hero-ring"></div>
+
+          <!-- User Portrait -->
+          <img src="assets/profile.png" alt="Abhishek Yadav"
+            style="width: 100%; max-width: 300px; height: auto; object-fit: contain; position: relative; z-index: 10; border-radius: 50%; border-bottom-right-radius: 40%; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4)) contrast(1.05); transform: translate(50px, -110px);"
+            onerror="this.src='https://via.placeholder.com/500x600/101623/38BDF8?text=Save+as+assets/profile.png'"
+            loading="lazy">
+
+          <div class="deco-dot" style="top:20%;left:30%"></div>
+          <div class="deco-dot" style="top:60%;left:10%"></div>
+          <div class="deco-dot" style="top:35%;left:85%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span class="scroll-arrow">↓</span>
+      <span class="scroll-label">SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ═══════ MARQUEE — Divider between Hero & About ═══════ -->
+  <div class="marquee-track">
+  <span class="marquee-item">DevOps Engineer</span>
+  <span class="marquee-item"><span class="gold">✦</span></span>
+
+  <span class="marquee-item">Cloud Computing</span>
+  <span class="marquee-item"><span class="gold">✦</span></span>
+
+  <span class="marquee-item">AWS & Docker</span>
+  <span class="marquee-item"><span class="gold">✦</span></span>
+
+  <span class="marquee-item">CI/CD Pipelines</span>
+  <span class="marquee-item"><span class="gold">✦</span></span>
+
+  <span class="marquee-item">Automation</span>
+  <span class="marquee-item"><span class="gold">✦</span></span>
+
+  <span class="marquee-item">Scalable Systems</span>
+  <span class="marquee-item"><span class="gold">✦</span></span>
+</div>
+
+  <!-- ═══════════════════ SECTION 2: ABOUT ME ═══════════════════ -->
+  <section class="section" id="about">
+    <div class="container two-col">
+      <div class="col-left reveal-left">
+        <span class="section-watermark">02</span>
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Career Snapshot</h2>
+        <p class="body-text">
+          I am a 3rd-year B.Tech CSE student specializing in DevOps. 
+I focus on building real-world applications, cloud-based systems, and scalable architectures.
+
+I have hands-on experience with AWS, Docker, GitHub Actions, and full stack development. 
+
+My goal is to become a highly skilled DevOps Engineer and build scalable production systems.
+        </p>
+      </div>
+      <div class="col-right reveal-right"
+        style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+        <div class="stats-row stagger-children">
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="4" data-suffix="+">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="3" data-suffix="">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="500" data-suffix="+">0</span>
+            <span class="stat-label">DSA Problems Solved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 2.5: MY JOURNEY ═══════════════════ -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">My Story</p>
+        <h2 class="section-title centered">My Journey into Tech 🚀</h2>
+        <p class="section-subtitle centered" style="max-width: 800px; margin: 0 auto;">
+          From curiosity to creation.<br><br>
+          <span
+            style="font-size: 1.05rem; color: var(--muted); display: block; margin-top: 1rem; line-height: 1.6;">Since
+            childhood, I have always been curious about how devices work. I used to wonder what happens inside machines
+            and how technology powers our daily lives. As I grew older, this curiosity turned into a deep interest in
+            computers, especially their hardware and inner workings.</span>
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="timeline-progress" id="timelineProgress"></div>
+
+  <!-- Stage 1 — Class 10 -->
+<div class="timeline-item reveal-up">
+  <div class="timeline-dot"><span class="icon">🏫</span></div>
+  <div class="timeline-content">
+    <div class="timeline-image-wrapper">
+      <img src="assets/School.png" 
+           alt="Saint Vivekanand School" 
+           class="timeline-image" loading="lazy">
+      <div class="timeline-gradient"></div>
+    </div>
+    <div class="timeline-text">
+      <h3 class="timeline-title">
+        Class 10th (Secondary Education)<br>
+        <span class="timeline-location">Etawah, Uttar Pradesh</span>
+      </h3>
+      <p class="timeline-desc">
+        I completed my 10th standard from Saint Vivekanand Sr. Sec. Public School, Etawah, 
+        scoring <strong>62%</strong>. This stage built my academic foundation and sparked my 
+        initial interest in computers and technology.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Stage 2 — Class 12 -->
+<div class="timeline-item reveal-up" style="transition-delay: 0.1s">
+  <div class="timeline-dot"><span class="icon">📘</span></div>
+  <div class="timeline-content">
+    <div class="timeline-text">
+      <h3 class="timeline-title">
+        Class 12th (Senior Secondary)<br>
+        <span class="timeline-location">Etawah, Uttar Pradesh</span>
+      </h3>
+      <p class="timeline-desc">
+        I completed my 12th standard from the same school, Saint Vivekanand Sr. Sec. Public School, 
+        scoring <strong>65%</strong>. During this time, I developed logical thinking, discipline, 
+        and a deeper interest in pursuing a career in technology.
+      </p>
+    </div>
+    <div class="timeline-image-wrapper">
+      <img src="assets/School.png" 
+           alt="Saint Vivekanand School" 
+           class="timeline-image" loading="lazy">
+      <div class="timeline-gradient"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Stage 3 -->
+<div class="timeline-item reveal-up" style="transition-delay: 0.2s">
+  <div class="timeline-dot highlight"><span class="icon">🎓</span></div>
+  <div class="timeline-content">
+    <div class="timeline-image-wrapper">
+      <img
+        src="https://happenings.lpu.in/wp-content/uploads/2024/09/Lovely-Professional-University-LPU-campus-1-scaled.jpg"
+        alt="LPU Campus" class="timeline-image" loading="lazy">
+      <div class="timeline-gradient highlight-gradient"></div>
+    </div>
+    <div class="timeline-text">
+      <div class="present-tag">Present Day</div>
+      <h3 class="timeline-title">
+        Turning Passion into Career<br>
+        <span class="timeline-location">Lovely Professional University</span>
+      </h3>
+      <p class="timeline-desc">
+        I am currently pursuing B.Tech in Computer Science at Lovely Professional University. 
+        With a growing interest in DevOps and cloud technologies, I am actively building real-world 
+        projects and improving my skills to become a professional DevOps Engineer.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ SECTION 3: TECHNICAL SKILLS ═══════════════════ -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Skills</p>
+      <h2 class="section-title centered">DevOps & Cloud Expertise</h2>
+      <p class="section-subtitle centered">
+        Building scalable systems with DevOps, Cloud, and Full Stack technologies.
+      </p>
+    </div>
+
+    <div class="skills-grid stagger-children">
+
+      <!-- 🔥 DEVOPS FIRST (MAIN FOCUS) -->
+      <div class="skill-card reveal-rotate devops-highlight">
+        <span class="skill-icon">⚙️</span>
+        <h3 class="skill-card-title">DevOps & Cloud</h3>
+        <p class="skills-sub">Automating infrastructure & scalable deployments</p>
+        <div class="tags">
+          <span class="tag">AWS (EC2, S3, IAM)</span>
+          <span class="tag">Docker</span>
+          <span class="tag">CI/CD Pipelines</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Shell Scripting</span>
+        </div>
+      </div>
+
+      <!-- FRONTEND -->
+      <div class="skill-card reveal-rotate">
+        <span class="skill-icon">⟨/⟩</span>
+        <h3 class="skill-card-title">Frontend</h3>
+        <div class="tags">
+          <span class="tag">HTML5 & CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React.js</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Responsive UI/UX</span>
+        </div>
+      </div>
+
+      <!-- BACKEND -->
+      <div class="skill-card reveal-rotate">
+        <span class="skill-icon">{ }</span>
+        <h3 class="skill-card-title">Backend</h3>
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">JWT Auth</span>
+        </div>
+      </div>
+
+      <!-- DATABASE -->
+      <div class="skill-card reveal-rotate">
+        <span class="skill-icon">◉</span>
+        <h3 class="skill-card-title">Databases</h3>
+        <div class="tags">
+          <span class="tag">MongoDB</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Schema Design</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 4: PROJECTS ═══════════════════ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header-left reveal-left">
+      <span class="section-watermark">04</span>
+      <p class="section-label">Work</p>
+      <h2 class="section-title">DevOps & Full Stack Projects</h2>
+      <p class="section-subtitle">Focused on scalable systems, automation, and real-world deployment.</p>
+    </div>
+
+    <div class="projects-grid stagger-children">
+
+      <!-- 🔥 Project 1 (UNCHANGED - but DevOps emphasis added) -->
+      <div class="project-card reveal-scale featured-card">
+        <div class="interactive-preview">
+          <div class="browser-head">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="url-bar">https://centrio-io.vercel.app/</span>
+          </div>
+          <div class="iframe-zoom-wrapper">
+            <iframe src="https://centrio-io.vercel.app/" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="project-info">
+          <span class="project-number">LIVE</span>
+          <h3 class="project-title">Centrio.io – DevOps Enabled Student Platform</h3>
+
+          <p class="project-desc">
+            A scalable full-stack student ecosystem with real-world deployment.
+            Designed with DevOps practices including cloud deployment and modular architecture for scalability.
+          </p>
+
+          <div class="project-meta">
+            <div class="project-tools">
+              <span class="meta-label">Tools:</span>
+              <div class="tags">
+                <span class="tag">AWS</span>
+                <span class="tag">Docker</span>
+                <span class="tag">CI/CD</span>
+                <span class="tag">MERN Stack</span>
+              </div>
+            </div>
+
+            <div class="project-skills">
+              <span class="meta-label">Skills:</span>
+              <span class="meta-text">DevOps, Deployment, System Design, Scalability</span>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a href="https://centrio-io.vercel.app/" target="_blank" class="project-link">→ Open Full Window</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔥 Project 2 (NEW - AWS DEVOPS PROJECT) -->
+      <div class="project-card reveal-scale">
+        <span class="project-number">02</span>
+        <h3 class="project-title">End-to-End AWS Infrastructure Automation</h3>
+
+        <p class="project-desc">
+          Automated cloud infrastructure setup using AWS services, focusing on scalability,
+          reliability, and DevOps practices. Designed infrastructure provisioning and deployment workflows.
+        </p>
+
+        <div class="project-meta">
+          <div class="project-tools">
+            <span class="meta-label">Tools:</span>
+            <div class="tags">
+              <span class="tag">AWS</span>
+              <span class="tag">EC2</span>
+              <span class="tag">S3</span>
+              <span class="tag">IAM</span>
+              <span class="tag">Automation</span>
+            </div>
+          </div>
+
+          <div class="project-skills">
+            <span class="meta-label">Skills:</span>
+            <span class="meta-text">Cloud Infrastructure, Automation, DevOps, Deployment</span>
+          </div>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/2704Abhishek/aws-devops-automation" target="_blank" class="project-link">
+            → View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- 🔥 Project 3 (UNCHANGED but slightly improved) -->
+      <div class="project-card reveal-scale featured-card">
+        <div class="interactive-preview">
+          <div class="browser-head">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="url-bar">https://recommendus.vercel.app/</span>
+          </div>
+          <div class="iframe-zoom-wrapper">
+            <iframe src="https://recommendus.vercel.app/" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="project-info">
+          <span class="project-number">LIVE</span>
+          <h3 class="project-title">Series & Movies Recommendation</h3>
+
+          <p class="project-desc">
+            A scalable recommendation system handling large datasets with optimized queries and efficient data processing.
+          </p>
+
+          <div class="project-meta">
+            <div class="project-tools">
+              <span class="meta-label">Tools:</span>
+              <div class="tags">
+                <span class="tag">MongoDB</span>
+                <span class="tag">React.js</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="project-skills">
+              <span class="meta-label">Skills:</span>
+              <span class="meta-text">Data Handling, Optimization, Full Stack Dev</span>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a href="https://recommendus.vercel.app/" target="_blank" class="project-link">→ Open Full Window</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔥 Project 4 (NEW - STUDENT FEEDBACK PORTAL) -->
+      <div class="project-card reveal-scale">
+        <span class="project-number">04</span>
+        <h3 class="project-title">Student Feedback Portal</h3>
+
+        <p class="project-desc">
+          A full-stack web application enabling students to submit and manage feedback efficiently.
+          Designed with backend APIs and structured database handling for scalability.
+        </p>
+
+        <div class="project-meta">
+          <div class="project-tools">
+            <span class="meta-label">Tools:</span>
+            <div class="tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="project-skills">
+            <span class="meta-label">Skills:</span>
+            <span class="meta-text">Backend Development, API Design, Database Management</span>
+          </div>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/2704Abhishek/Student-feedback" target="_blank" class="project-link">
+            → View on GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+  <!-- ═══════════════════ SECTION 5: CERTIFICATIONS ═══════════════════ -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Credentials</p>
+        <h2 class="section-title centered">Certifications</h2>
+      </div>
+      <div class="cert-grid stagger-children">
+        <div class="cert-card reveal-left">
+          <div class="cert-icon">✦</div>
+          <div class="cert-info">
+            <h3 class="cert-name">Oracle 2025 Certified DevOps Professional</h3>
+            <p class="cert-issuer">Oracle</p>
+            <span class="cert-year">2025</span>
+            <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=B8EDC713C95FE9B31F7A7A882E3ADDDFC300086B7DA787CD1BDBE84FF7620872">→ Verify</a>
+          </div>
+        </div>
+        <div class="cert-card reveal-right">
+          <div class="cert-icon">◈</div>
+          <div class="cert-info">
+            <h3 class="cert-name">Oracle 2025 Certified Developer Professional</h3>
+            <p class="cert-issuer">Oracle</p>
+            <span class="cert-year">2025</span>
+            <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=A91110DBE90EEB01946BC7AF4526E9B27AAEC5EF91044703313E5BFE60F94F94">→ Verify</a>
+
+          </div>
+        </div>
+        <div class="cert-card reveal-left">
+          <div class="cert-icon">✧</div>
+          <div class="cert-info">
+            <h3 class="cert-name">Python 101 for Data Science </h3>
+            <p class="cert-issuer">IBM</p>
+            <span class="cert-year">2025</span>
+            <a href="https://courses.yl-ptech.skillsnetwork.site/certificates/2200e7a798da4f0e8dfe80572f864675">→ Verify</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION: TRAINING & EXPERIENCE ═══════════════════ -->
+<section class="section section-alt" id="training">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <p class="section-label">Experience</p>
+      <h2 class="section-title centered">Training & Experience</h2>
+      <p class="section-subtitle centered">
+        Practical learning experiences and industry exposure.
+      </p>
+    </div>
+
+    <div class="training-grid">
+
+      <!-- IBM Training Card -->
+      <div class="training-card reveal-up">
+
+        <div class="training-image">
+          <img src="assets/IBM.png" alt="IBM Training Certificate" loading="lazy">
+        </div>
+
+        <div class="training-content">
+          <h3 class="training-title">IBM Summer Training – Python & Machine Learning</h3>
+          <p class="training-org">IBM Skills Network</p>
+
+          <p class="training-desc">
+            Completed intensive summer training in Python and Machine Learning, working with real-world datasets,
+            building models, and applying data-driven problem-solving techniques. Gained hands-on exposure to
+            ML workflows and practical implementation.
+          </p>
+
+          <a href="https://courses.yl-ptech.skillsnetwork.site/certificates/2200e7a798da4f0e8dfe80572f864675"
+             target="_blank" class="training-link">
+            View Certificate →
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- ═══════════════════ SECTION 6: TOOLS TABLE ═══════════════════ -->
+<section class="section" id="tools">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Overview</p>
+      <h2 class="section-title centered">DevOps Tools & Platforms</h2>
+      <p class="section-subtitle centered">
+        Focused on cloud, automation, and scalable infrastructure.
+      </p>
+    </div>
+
+    <div class="tech-ecosystem grid-ecosystem">
+
+      <!-- 🔥 DEVOPS FIRST (MAIN FOCUS) -->
+      <div class="eco-node reveal-up devops-highlight">
+        <div class="eco-scanner"></div>
+        <div class="eco-header">
+          <span class="eco-icon">⚙️</span>
+          <h3>DevOps & Cloud</h3>
+        </div>
+        <div class="eco-body">
+          <div class="tech-item"><span class="tech-dot"></span>AWS (EC2, S3, IAM)</div>
+          <div class="tech-item"><span class="tech-dot"></span>Docker (Containerization)</div>
+          <div class="tech-item"><span class="tech-dot"></span>CI/CD Pipelines</div>
+          <div class="tech-item"><span class="tech-dot"></span>GitHub Actions / Jenkins</div>
+          <div class="tech-item"><span class="tech-dot"></span>Linux & Shell Scripting</div>
+        </div>
+        <div class="eco-bg-glow"></div>
+      </div>
+
+      <!-- FRONTEND -->
+      <div class="eco-node reveal-up" style="transition-delay: 0.1s">
+        <div class="eco-scanner"></div>
+        <div class="eco-header">
+          <span class="eco-icon">◆</span>
+          <h3>Frontend Core</h3>
+        </div>
+        <div class="eco-body">
+          <div class="tech-item"><span class="tech-dot"></span>React.js</div>
+          <div class="tech-item"><span class="tech-dot"></span>JavaScript (ES6+)</div>
+          <div class="tech-item"><span class="tech-dot"></span>Tailwind CSS</div>
+          <div class="tech-item"><span class="tech-dot"></span>HTML5 / CSS3</div>
+        </div>
+        <div class="eco-bg-glow"></div>
+      </div>
+
+      <!-- BACKEND -->
+      <div class="eco-node reveal-up" style="transition-delay: 0.2s">
+        <div class="eco-scanner"></div>
+        <div class="eco-header">
+          <span class="eco-icon">◈</span>
+          <h3>Backend & API</h3>
+        </div>
+        <div class="eco-body">
+          <div class="tech-item"><span class="tech-dot"></span>Node.js</div>
+          <div class="tech-item"><span class="tech-dot"></span>Express.js</div>
+          <div class="tech-item"><span class="tech-dot"></span>RESTful APIs</div>
+          <div class="tech-item"><span class="tech-dot"></span>JWT Auth</div>
+        </div>
+        <div class="eco-bg-glow"></div>
+      </div>
+
+      <!-- DATABASE -->
+      <div class="eco-node reveal-up" style="transition-delay: 0.3s">
+        <div class="eco-scanner"></div>
+        <div class="eco-header">
+          <span class="eco-icon">◉</span>
+          <h3>Data Layer</h3>
+        </div>
+        <div class="eco-body">
+          <div class="tech-item"><span class="tech-dot"></span>MongoDB (NoSQL)</div>
+          <div class="tech-item"><span class="tech-dot"></span>MySQL</div>
+          <div class="tech-item"><span class="tech-dot"></span>Schema Design</div>
+        </div>
+        <div class="eco-bg-glow"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 7: SOFT SKILLS & ACTIVITIES ═══════════════════ -->
+<section class="section section-alt" id="softskills">
+  <div class="container two-col">
+
+    <!-- LEFT SIDE -->
+    <div class="col-left reveal-left">
+      <p class="section-label">Soft Skills</p>
+
+      <div class="soft-skills-list">
+        <div class="soft-skill-row">
+          <h3 class="soft-skill-name">Problem Solving</h3>
+          <p class="soft-skill-desc">
+            Breaking down complex challenges into clear, logical steps.
+          </p>
+        </div>
+
+        <div class="soft-skill-row">
+          <h3 class="soft-skill-name">Product Thinking</h3>
+          <p class="soft-skill-desc">
+            Focusing extensively on real-world use cases, usability, and metrics.
+          </p>
+        </div>
+
+        <div class="soft-skill-row">
+          <h3 class="soft-skill-name">Team Collaboration</h3>
+          <p class="soft-skill-desc">
+            Collaborated effectively with cross-functional teams to build and deliver scalable solutions.
+          </p>
+        </div>
+
+        <div class="soft-skill-row">
+          <h3 class="soft-skill-name">Adaptability</h3>
+          <p class="soft-skill-desc">
+            Fast learner, rapidly adopting new tools like AI, AWS, and modern stacks.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="col-right reveal-right">
+
+      <div class="activity-card">
+        <h3 class="activity-name">DSA Self-Practice (500+ Problems)</h3>
+        <p class="activity-desc">
+          Systematically solving problems across major topics to continuously improve optimization skills.
+        </p>
+      </div>
+
+      <div class="activity-card">
+        <h3 class="activity-name">Bridging AI & Web</h3>
+        <p class="activity-desc">
+          Actively combining foundational AI tooling with modern web environments to create seamless digital experiences.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- ═══════ MARQUEE — Divider before GitHub ═══════ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">Cloud Infrastructure</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">AWS</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">Docker</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">Git</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">Jenkins</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ SECTION 8: GITHUB ═══════════════════ -->
+  <section class="section" id="github">
+    <div class="container">
+      <div class="github-profile-card reveal-scale">
+        <svg class="github-icon" viewBox="0 0 24 24" width="40" height="40" fill="var(--accent)">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        <!-- REPLACE with real GitHub username -->
+        <p class="github-username">@2704Abhishek</p>
+        <p class="github-subtitle">Building in public. All projects documented.</p>
+        <!-- REPLACE with real GitHub profile link -->
+        <a href="https://github.com/2704Abhishek" target="_blank" rel="noopener" class="btn btn-primary"><span>View
+            GitHub Profile →</span></a>
+      </div>
+      <div class="repo-grid stagger-children">
+        <div class="repo-card reveal">
+          <p class="repo-name">transparent-insurance-chatbot</p>
+          <p class="repo-desc">Insurance policy explainer chatbot.</p>
+          <div class="repo-meta">
+            <span class="tag">JavaScript</span>
+            <span class="repo-stars">⭐ 0</span>
+          </div>
+        </div>
+        <div class="repo-card reveal">
+          <p class="repo-name">dsa-problem-tracker</p>
+          <p class="repo-desc">Track your DSA practice and streaks.</p>
+          <div class="repo-meta">
+            <span class="tag">JavaScript</span>
+            <span class="repo-stars">⭐ 0</span>
+          </div>
+        </div>
+        <div class="repo-card reveal">
+          <p class="repo-name">portfolio-website</p>
+          <p class="repo-desc">Personal portfolio built with React.</p>
+          <div class="repo-meta">
+            <span class="tag">JavaScript</span>
+            <span class="repo-stars">⭐ 0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 9: CONTACT ═══════════════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container two-col">
+      <div class="col-left reveal-left">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="contact-heading">Let's Connect</h2>
+        <p class="contact-subtext">Open to internships, collaborations, and full-time opportunities. Reach out — I reply
+          within 24 hours.</p>
+        <div class="contact-rows">
+          <!-- REPLACE placeholder email, LinkedIn, location -->
+          <div class="contact-row">
+            <span class="contact-icon">📧</span>
+            <a href="mailto:yadavabhishek2704@gmail.com">yadavabhishek2704@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">💼</span>
+            <a href="https://www.linkedin.com/in/abhiishek04/" target="_blank"
+              rel="noopener">linkedin.com/in/abhiishek04</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">📍</span>
+            <span>Punjab, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-right reveal-right">
+        <form class="contact-form" action="mailto:yadavabhishek2704@gmail.com" method="POST" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="your@email.com" required>
+          <textarea name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          <button type="submit" class="btn btn-primary btn-full"><span>Send Message →</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SECTION 10: FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-name">Abhishek Yadav</p>
+      <p class="footer-role">DevOps Engineer · Cloud & Automation</p>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <span class="footer-sep">·</span>
+        <a href="#skills">Skills</a>
+        <span class="footer-sep">·</span>
+        <a href="#projects">Projects</a>
+        <span class="footer-sep">·</span>
+        <a href="#certifications">Certs</a>
+        <span class="footer-sep">·</span>
+        <a href="#tools">Tools</a>
+        <span class="footer-sep">·</span>
+        <a href="#github">GitHub</a>
+        <span class="footer-sep">·</span>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2025 Abhishek Yadav. Built with purpose.</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ AI CHATBOT ═══════════════════ -->
+  <button class="chat-trigger" id="chatTrigger" aria-label="Open AI Chat">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+  </button>
+
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar"
+          style="padding: 0; overflow: hidden; border: 2px solid var(--accent); background: none;">
+          <img src="assets/profile.png" alt="Abhishek" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div>
+          <h3 class="chat-title">Abhishek AI</h3>
+          <span class="chat-status">Online</span>
+        </div>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Close Chat">×</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <!-- Chat bubbles will go here -->
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="Ask me anything about my work..." autocomplete="off">
+      <button id="chatSend" aria-label="Send Message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
